@@ -13,4 +13,6 @@ class Student:
         print(f"Ім'я: {self.name}, Вік: {self.age}")
 
 
+student = Student("Олег", 17)
 
+student.print_info()
