@@ -10,3 +10,9 @@ class Circle:
 
     def area(self):
         return math.pi * (self.radius ** 2)
+
+
+radius = float(input("Введіть радіус кола: "))
+circle = Circle(radius)
+circle_area = circle.area()
+print(f"Площа кола з радіусом {circle.radius} дорівнює {circle_area:.2f}")
