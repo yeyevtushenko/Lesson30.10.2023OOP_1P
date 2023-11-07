@@ -11,3 +11,7 @@ class Book:
 
     def display_info(self):
         print(f"Назва: {self.title}, Автор: {self.author}, Жанр: {self.genre}")
+
+title = input("Введіть назву книги: ")
+author = input("Введіть автора книги: ")
+genre = input("Введіть жанр книги: ")
