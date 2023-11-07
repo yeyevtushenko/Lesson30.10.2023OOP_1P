@@ -12,3 +12,13 @@ class BankAccount:
             print(f"Поповнення балансу на {amount} грн успішно виконано.")
         else:
             print("Помилка: Сума поповнення повинна бути більше нуля.")
+
+    def withdraw(self, amount):
+        if amount > 0:
+            if amount <= self.balance:
+                self.balance -= amount
+                print(f"Виведення {amount} грн успішно виконано.")
+            else:
+                print("Помилка: Недостатньо коштів на балансі.")
+        else:
+            print("Помилка: Сума виведення повинна бути більше нуля.")
