@@ -22,3 +22,16 @@ class BankAccount:
                 print("Помилка: Недостатньо коштів на балансі.")
         else:
             print("Помилка: Сума виведення повинна бути більше нуля.")
+
+    def display_balance(self):
+        print(f"Баланс на рахунку користувача {self.owner}: {self.balance} грн")
+
+account = BankAccount("Олег Олексійович", 15000)
+# Перевіримо код на правильність виконання
+account.display_balance()
+account.deposit(500)
+account.display_balance()
+account.withdraw(3000)
+account.display_balance()
+# Перевірка виведення більше, ніж є на рахунку
+account.withdraw(15000)
