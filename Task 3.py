@@ -15,3 +15,7 @@ class Book:
 title = input("Введіть назву книги: ")
 author = input("Введіть автора книги: ")
 genre = input("Введіть жанр книги: ")
+
+book = Book(title, author, genre)
+
+book.display_info()
